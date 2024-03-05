@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegisterActivity"
     style="@style/ActivityBG">
 
     <!-- Header -->
@@ -28,12 +28,12 @@
             android:layout_marginStart="25dp"
             android:clickable="true"/>
 
-        <!-- Login Text -->
+        <!-- Register Text -->
         <TextView
             android:id="@+id/HeaderLogin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Login"
+            android:text="Register"
             android:textSize="40dp"
             android:textColor="@color/primary"
             android:fontFamily="@font/albert_sans"
@@ -104,14 +104,37 @@
             android:layout_marginBottom="5dp"/>
     </RelativeLayout>
 
-    <!-- Sign In Button -->
+    <!-- Confirm Password Entry -->
+    <RelativeLayout
+        android:id="@+id/ConfirmPasswordEntryLayer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        style="@style/ConfirmPassEntry"
+
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintTop_toBottomOf="@id/PasswordEntryLayer"
+        android:layout_marginTop="20dp">
+
+        <!-- Edit Text for Confirm Password ID: etConfirmPassword -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+    <!-- Register Button -->
     <Button
-        android:id="@+id/btnSignIn"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         style="@style/RoundedButtonStyle"
         android:backgroundTint="@color/primary"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textStyle="bold"
         android:textSize="25dp"
 
@@ -124,7 +147,7 @@
         android:id="@+id/RegisterLayer"
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        app:layout_constraintTop_toBottomOf="@id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
         android:layout_marginTop="15dp"
         android:gravity="center">
 
@@ -132,17 +155,17 @@
             android:id="@+id/TextView1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Dont have an account?"
+            android:text="Already Registered?"
             android:textSize="15dp"
             style="@style/DefaultText"
             android:gravity="center"/>
 
-        <!-- Text View for Sign Up ID: tvSignUp -->
+        <!-- Text View for Sign Up ID: tvSignIn -->
         <TextView
-            android:id="@+id/tvSignUp"
+            android:id="@+id/tvSignIn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Sign Up"
+            android:text="Sign In"
             android:layout_toRightOf="@id/TextView1"
             android:textSize="15dp"
             android:textColor="@color/primary"
@@ -152,18 +175,5 @@
             android:focusable="true" />
 
     </RelativeLayout>
-
-    <!-- Text View for Forgot Password ID: tvForgotPassword -->
-    <TextView
-        android:id="@+id/tvForgotPassword"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:text="Forgot Password?"
-        app:layout_constraintTop_toBottomOf="@id/RegisterLayer"
-        android:gravity="center"
-        android:textSize="15dp"
-        android:textColor="@color/primary"
-        android:clickable="true"
-        android:focusable="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

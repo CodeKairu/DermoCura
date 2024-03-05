@@ -37,6 +37,11 @@
         <item name="android:background">@drawable/blackname</item>
     </style>
 
+    <!-- Light Mode Confirm Password Entry -->
+    <style name="ConfirmPassEntry">
+        <item name="android:background">@drawable/blackconfirmpass</item>
+    </style>
+
 
 
 
