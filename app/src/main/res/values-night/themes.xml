@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DermoCura" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="shapeAppearanceOverlay">@style/RoundedButtonStyle</item>
+    </style>
+
+    <style name="RoundedButtonStyle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="android:textColor">@color/LightTXT</item>
+
+    </style>
+
+    <!-- Dark Mode Background -->
+    <style name="ActivityBG">
+        <item name="background">@color/DarkBG</item>
+    </style>
+
+    <!-- Dark Mode Text -->
+    <style name="DefaultText">
+        <item name="android:textColor">#F1F1F1</item>
+    </style>
+
+    <!-- Dark Mode Password Entry -->
+    <style name="PassEntry">
+        <item name="android:background">@drawable/whitepass</item>
+    </style>
+
+    <!-- Dark Mode Icon -->
+    <style name="LDIcon">
+        <item name="android:src">@drawable/whiteicon</item>
+    </style>
+
+    <!-- Dark Mode Name Entry -->
+    <style name="NameEntry">
+        <item name="android:background">@drawable/whitename</item>
+    </style>
+
+</resources>
