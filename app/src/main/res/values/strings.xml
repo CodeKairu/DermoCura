@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DermoCura</string>
+    <string name="reasonemail">Adding your email makes booking doctor appointments and resetting your password simple.</string>
 </resources>

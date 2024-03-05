@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    style="@style/ActivityBG"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    style="@style/ActivityBG">
+    tools:context=".MainActivity">
 
     <!-- Header -->
     <RelativeLayout
@@ -22,134 +22,134 @@
         <!-- Dark/Light Icon Button -->
         <ImageView
             android:id="@+id/HeaderIcon"
+            style="@style/LDIcon"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            style="@style/LDIcon"
             android:layout_marginStart="25dp"
-            android:clickable="true"/>
+            android:clickable="true" />
 
         <!-- Login Text -->
         <TextView
             android:id="@+id/HeaderLogin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Login"
-            android:textSize="40dp"
-            android:textColor="@color/primary"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/HeaderIcon"
             android:fontFamily="@font/albert_sans"
 
-            android:layout_toRightOf="@id/HeaderIcon"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"/>
+            android:text="Login"
+            android:textColor="@color/primary"
+            android:textSize="40dp" />
 
         <!-- Page Text -->
         <TextView
             android:id="@+id/HeaderPage"
+            style="@style/DefaultText"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Page"
-            android:textSize="40dp"
-            style="@style/DefaultText"
-            android:fontFamily="@font/albert_sans"
-
-            android:layout_toRightOf="@id/HeaderLogin"
             android:layout_centerVertical="true"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@id/HeaderLogin"
+
+            android:fontFamily="@font/albert_sans"
+            android:text="Page"
+            android:textSize="40dp" />
 
     </RelativeLayout>
 
     <!-- Name Entry -->
     <RelativeLayout
         android:id="@+id/NameEntryLayer"
+        style="@style/NameEntry"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/NameEntry"
 
         android:layout_marginHorizontal="25dp"
-        app:layout_constraintTop_toBottomOf="@id/HeaderLayer"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/HeaderLayer">
 
         <!-- Edit Text for Name ID: etName-->
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
+            android:layout_marginHorizontal="10dp"
 
-            android:layout_marginHorizontal="5dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:background="@null" />
     </RelativeLayout>
 
     <!-- Password Entry -->
     <RelativeLayout
         android:id="@+id/PasswordEntryLayer"
+        style="@style/PassEntry"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/PassEntry"
 
         android:layout_marginHorizontal="25dp"
-        app:layout_constraintTop_toBottomOf="@id/NameEntryLayer"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/NameEntryLayer">
 
         <!-- Edit Text for Password ID: etPassword -->
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
+            android:layout_marginHorizontal="10dp"
 
-            android:layout_marginHorizontal="5dp"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="5dp"
+            android:background="@null" />
     </RelativeLayout>
 
     <!-- Sign In Button -->
     <Button
         android:id="@+id/btnSignIn"
+        style="@style/RoundedButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/RoundedButtonStyle"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="@color/primary"
         android:text="Sign In"
-        android:textStyle="bold"
-        android:textSize="25dp"
 
-        android:layout_marginHorizontal="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="100dp"/>
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <!-- Register TextButton -->
     <RelativeLayout
         android:id="@+id/RegisterLayer"
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        app:layout_constraintTop_toBottomOf="@id/btnSignIn"
         android:layout_marginTop="15dp"
-        android:gravity="center">
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnSignIn">
 
         <TextView
             android:id="@+id/TextView1"
+            style="@style/DefaultText"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:text="Dont have an account?"
-            android:textSize="15dp"
-            style="@style/DefaultText"
-            android:gravity="center"/>
+            android:textSize="15dp" />
 
         <!-- Text View for Sign Up ID: tvSignUp -->
         <TextView
             android:id="@+id/tvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Sign Up"
-            android:layout_toRightOf="@id/TextView1"
-            android:textSize="15dp"
-            android:textColor="@color/primary"
-            android:gravity="center"
             android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/TextView1"
             android:clickable="true"
-            android:focusable="true" />
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/primary"
+            android:textSize="15dp" />
 
     </RelativeLayout>
 
@@ -158,12 +158,12 @@
         android:id="@+id/tvForgotPassword"
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:text="Forgot Password?"
-        app:layout_constraintTop_toBottomOf="@id/RegisterLayer"
-        android:gravity="center"
-        android:textSize="15dp"
-        android:textColor="@color/primary"
         android:clickable="true"
-        android:focusable="true" />
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="@color/primary"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/RegisterLayer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

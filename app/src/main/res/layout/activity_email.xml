@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
+    tools:context=".EmailActivity"
     style="@style/ActivityBG">
 
     <!-- Header -->
@@ -28,12 +28,12 @@
             android:layout_marginStart="25dp"
             android:clickable="true"/>
 
-        <!-- Register Text -->
+        <!-- Add Text -->
         <TextView
             android:id="@+id/HeaderLogin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Register"
+            android:text="Add"
             android:textSize="40dp"
             android:textColor="@color/primary"
             android:fontFamily="@font/albert_sans"
@@ -42,12 +42,12 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"/>
 
-        <!-- Page Text -->
+        <!-- Email Text -->
         <TextView
             android:id="@+id/HeaderPage"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Page"
+            android:text="Email"
             android:textSize="40dp"
             style="@style/DefaultText"
             android:fontFamily="@font/albert_sans"
@@ -60,18 +60,18 @@
 
     <!-- Name Entry -->
     <RelativeLayout
-        android:id="@+id/NameEntryLayer"
+        android:id="@+id/EmailEntryLayer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/NameEntry"
+        style="@style/EmailEntry"
 
         android:layout_marginHorizontal="25dp"
         app:layout_constraintTop_toBottomOf="@id/HeaderLayer"
         android:layout_marginTop="40dp">
 
-        <!-- Edit Text for Name ID: etName-->
+        <!-- Edit Text for Email ID: etEmail-->
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
@@ -81,51 +81,15 @@
             android:layout_marginBottom="5dp"/>
     </RelativeLayout>
 
-    <!-- Password Entry -->
-    <RelativeLayout
-        android:id="@+id/PasswordEntryLayer"
+    <!-- Additional Information -->
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        style="@style/PassEntry"
-
-        android:layout_marginHorizontal="25dp"
-        app:layout_constraintTop_toBottomOf="@id/NameEntryLayer"
-        android:layout_marginTop="20dp">
-
-        <!-- Edit Text for Password ID: etPassword -->
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null"
-
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="5dp"/>
-    </RelativeLayout>
-
-    <!-- Confirm Password Entry -->
-    <RelativeLayout
-        android:id="@+id/ConfirmPasswordEntryLayer"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        style="@style/ConfirmPassEntry"
-
-        android:layout_marginHorizontal="25dp"
-        app:layout_constraintTop_toBottomOf="@id/PasswordEntryLayer"
-        android:layout_marginTop="20dp">
-
-        <!-- Edit Text for Confirm Password ID: etConfirmPassword -->
-        <EditText
-            android:id="@+id/etConfirmPassword"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null"
-
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="5dp"/>
-    </RelativeLayout>
+        android:layout_height="wrap_content"
+        android:text="@string/reasonemail"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/EmailEntryLayer"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="25dp"/>
 
     <!-- Register Button -->
     <Button
@@ -134,7 +98,7 @@
         android:layout_height="70dp"
         style="@style/RoundedButtonStyle"
         android:backgroundTint="@color/primary"
-        android:text="Continue"
+        android:text="Register"
         android:textStyle="bold"
         android:textSize="25dp"
 
@@ -142,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="100dp"/>
 
-    <!-- Register TextButton -->
+    <!-- Skip Email TextButton -->
     <RelativeLayout
         android:id="@+id/RegisterLayer"
         android:layout_width="match_parent"
@@ -151,22 +115,12 @@
         android:layout_marginTop="15dp"
         android:gravity="center">
 
+        <!-- Text View for Sign Up ID: tvSkipEmail -->
         <TextView
-            android:id="@+id/TextView1"
+            android:id="@+id/tvSkipEmail"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Already Registered?"
-            android:textSize="15dp"
-            style="@style/DefaultText"
-            android:gravity="center"/>
-
-        <!-- Text View for Sign Up ID: tvSignIn -->
-        <TextView
-            android:id="@+id/tvSignIn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Sign In"
-            android:layout_toRightOf="@id/TextView1"
+            android:text="Skip Adding Email"
             android:textSize="15dp"
             android:textColor="@color/primary"
             android:gravity="center"

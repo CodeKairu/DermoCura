@@ -41,4 +41,9 @@
         <item name="android:background">@drawable/whiteconfirmpass</item>
     </style>
 
+    <!-- Dark Mode Email Entry -->
+    <style name="EmailEntry">
+        <item name="android:background">@drawable/whiteemail</item>
+    </style>
+
 </resources>

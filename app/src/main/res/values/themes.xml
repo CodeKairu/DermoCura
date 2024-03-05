@@ -42,6 +42,11 @@
         <item name="android:background">@drawable/blackconfirmpass</item>
     </style>
 
+    <!-- Light Mode Email Entry -->
+    <style name="EmailEntry">
+        <item name="android:background">@drawable/blackemail</item>
+    </style>
+
 
 
 
