@@ -87,32 +87,36 @@ public class EmailActivity extends AppCompatActivity {
                 email = etEmail.getText().toString().trim();
                 name = rcvName;
                 password = rcvPassword;
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        if (response.equals("success")) {
-                            Toast.makeText(EmailActivity.this, "Register Successfully", Toast.LENGTH_SHORT).show();
-                        } else if (response.equals("failure")) {
-                            Toast.makeText(EmailActivity.this, "Register Failed", Toast.LENGTH_SHORT).show();
+                if (!email.isEmpty()) {
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            if (response.equals("success")) {
+                                Toast.makeText(EmailActivity.this, "Register Successfully", Toast.LENGTH_SHORT).show();
+                            } else if (response.equals("failure")) {
+                                Toast.makeText(EmailActivity.this, "Register Failed", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(EmailActivity.this, error.toString().trim(), Toast.LENGTH_SHORT).show();
-                    }
-                }){
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String, String> data = new HashMap<>();
-                        data.put("name", name);
-                        data.put("password", password);
-                        data.put("email", email);
-                        return data;
-                    }
-                };
-                RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-                requestQueue.add(stringRequest);
+                    }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(EmailActivity.this, error.toString().trim(), Toast.LENGTH_SHORT).show();
+                        }
+                    }){
+                        @Override
+                        protected Map<String, String> getParams() throws AuthFailureError {
+                            Map<String, String> data = new HashMap<>();
+                            data.put("name", name);
+                            data.put("password", password);
+                            data.put("email", email);
+                            return data;
+                        }
+                    };
+                    RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+                    requestQueue.add(stringRequest);
+                } else {
+                    Toast.makeText(EmailActivity.this, "Email is Empty", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
