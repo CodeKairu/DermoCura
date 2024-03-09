@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="AssetColor">#FFFFFF</color>
+    <color name="ActivityBackground">#191919</color>
+    <color name="TextColor">#FFFFFF</color>
+</resources>

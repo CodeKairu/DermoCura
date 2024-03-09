@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    style="@style/ActivityBG">
+    android:background="@color/ActivityBackground">
 
     <!-- Header -->
     <RelativeLayout
@@ -24,7 +24,7 @@
             android:id="@+id/HeaderIcon"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            style="@style/LDIcon"
+            android:background="@drawable/theme"
             android:layout_marginStart="25dp"
             android:clickable="true"/>
 
@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:text="Page"
             android:textSize="40dp"
-            style="@style/DefaultText"
+            android:textColor="@color/TextColor"
             android:fontFamily="@font/albert_sans"
 
             android:layout_toRightOf="@id/HeaderLogin"
@@ -63,7 +63,7 @@
         android:id="@+id/NameEntryLayer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/NameEntry"
+        android:background="@drawable/bg_name"
 
         android:layout_marginHorizontal="25dp"
         app:layout_constraintTop_toBottomOf="@id/HeaderLayer"
@@ -86,7 +86,7 @@
         android:id="@+id/PasswordEntryLayer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/PassEntry"
+        android:background="@drawable/bg_pass"
 
         android:layout_marginHorizontal="25dp"
         app:layout_constraintTop_toBottomOf="@id/NameEntryLayer"
@@ -109,7 +109,7 @@
         android:id="@+id/ConfirmPasswordEntryLayer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        style="@style/ConfirmPassEntry"
+        android:background="@drawable/bg_confirmpassword"
 
         android:layout_marginHorizontal="25dp"
         app:layout_constraintTop_toBottomOf="@id/PasswordEntryLayer"
@@ -157,7 +157,7 @@
             android:layout_height="match_parent"
             android:text="Already Registered?"
             android:textSize="15dp"
-            style="@style/DefaultText"
+            android:textColor="@color/TextColor"
             android:gravity="center"/>
 
         <!-- Text View for Sign Up ID: tvSignIn -->

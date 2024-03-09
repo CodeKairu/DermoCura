@@ -7,53 +7,9 @@
     <style name="RoundedButtonStyle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">20dp</item>
-        <item name="android:textColor">@color/DarkTXT</item>
+        <item name="android:textColor">@color/TextColor</item>
     </style>
 
     <style name="Theme.DermoCura" parent="Base.Theme.DermoCura" />
-
-    <!-- Light Mode Background -->
-    <style name="ActivityBG">
-        <item name="background">@color/LightBG</item>
-    </style>
-
-    <!-- Light Mode Text -->
-    <style name="DefaultText">
-        <item name="android:textColor">#000000</item>
-    </style>
-
-    <!-- Light Mode Password Entry -->
-    <style name="PassEntry">
-        <item name="android:background">@drawable/blackpass</item>
-    </style>
-
-    <!-- Light Mode Icon -->
-    <style name="LDIcon">
-        <item name="android:src">@drawable/blackicon</item>
-    </style>
-
-    <!-- Light Mode Name Entry -->
-    <style name="NameEntry">
-        <item name="android:background">@drawable/blackname</item>
-    </style>
-
-    <!-- Light Mode Confirm Password Entry -->
-    <style name="ConfirmPassEntry">
-        <item name="android:background">@drawable/blackconfirmpass</item>
-    </style>
-
-    <!-- Light Mode Email Entry -->
-    <style name="EmailEntry">
-        <item name="android:background">@drawable/blackemail</item>
-    </style>
-
-
-
-
-
-
-
-
-
 
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    style="@style/ActivityBG"
+    android:background="@color/ActivityBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -22,7 +22,7 @@
         <!-- Dark/Light Icon Button -->
         <ImageView
             android:id="@+id/HeaderIcon"
-            style="@style/LDIcon"
+            android:src="@drawable/theme"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginStart="25dp"
@@ -45,7 +45,7 @@
         <!-- Page Text -->
         <TextView
             android:id="@+id/HeaderPage"
-            style="@style/DefaultText"
+            android:textColor="@color/TextColor"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
@@ -61,10 +61,9 @@
     <!-- Name Entry -->
     <RelativeLayout
         android:id="@+id/NameEntryLayer"
-        style="@style/NameEntry"
+        android:background="@drawable/bg_name"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-
         android:layout_marginHorizontal="25dp"
         android:layout_marginTop="40dp"
         app:layout_constraintTop_toBottomOf="@id/HeaderLayer">
@@ -84,7 +83,7 @@
     <!-- Password Entry -->
     <RelativeLayout
         android:id="@+id/PasswordEntryLayer"
-        style="@style/PassEntry"
+        android:background="@drawable/bg_pass"
         android:layout_width="match_parent"
         android:layout_height="70dp"
 
@@ -130,7 +129,7 @@
 
         <TextView
             android:id="@+id/TextView1"
-            style="@style/DefaultText"
+            android:textColor="@color/TextColor"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"

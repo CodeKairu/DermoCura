@@ -128,6 +128,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "U Stoopid Forgit Paswod", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, ImageAnalyization.class);
+                startActivity(intent);
+                finish();
             }
         });
 

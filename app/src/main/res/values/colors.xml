@@ -5,9 +5,8 @@
 
     <color name="primary">#2196F3</color>
 
-    <!-- Light/Dark BG-->
-    <color name="LightBG">#F1F1F1</color>
-    <color name="DarkBG">#191919</color>
-    <color name="LightTXT">#FFFFFF</color>
-    <color name="DarkTXT">#000000</color>
+    <color name="ActivityBackground">#F1F1F1</color>
+    <color name="TextColor">#000000</color>
+    <color name="AssetColor">#000000</color>
 </resources>
+

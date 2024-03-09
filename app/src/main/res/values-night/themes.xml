@@ -7,43 +7,8 @@
     <style name="RoundedButtonStyle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">20dp</item>
-        <item name="android:textColor">@color/LightTXT</item>
+        <item name="android:textColor">@color/TextColor</item>
 
-    </style>
-
-    <!-- Dark Mode Background -->
-    <style name="ActivityBG">
-        <item name="background">@color/DarkBG</item>
-    </style>
-
-    <!-- Dark Mode Text -->
-    <style name="DefaultText">
-        <item name="android:textColor">#F1F1F1</item>
-    </style>
-
-    <!-- Dark Mode Password Entry -->
-    <style name="PassEntry">
-        <item name="android:background">@drawable/whitepass</item>
-    </style>
-
-    <!-- Dark Mode Icon -->
-    <style name="LDIcon">
-        <item name="android:src">@drawable/whiteicon</item>
-    </style>
-
-    <!-- Dark Mode Name Entry -->
-    <style name="NameEntry">
-        <item name="android:background">@drawable/whitename</item>
-    </style>
-
-    <!-- Dark Mode Confirm Password Entry -->
-    <style name="ConfirmPassEntry">
-        <item name="android:background">@drawable/whiteconfirmpass</item>
-    </style>
-
-    <!-- Dark Mode Email Entry -->
-    <style name="EmailEntry">
-        <item name="android:background">@drawable/whiteemail</item>
     </style>
 
 </resources>
